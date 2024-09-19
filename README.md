@@ -23,7 +23,9 @@ pip install -r requirements.txt
 OPENAI_API_KEY: OpenAI API key.
 GOOGLE_APPLICATION_CREDENTIALS: Path of Google Cloud credentials JSON file.
 
-### 3. Run Rasa
+### 3. Configure API Keys Add your OpenAI, Google Cloud, and OpenWeather API keys.
+
+### 4. Train & Run Rasa
 ```bash
 
 Copy code
@@ -31,7 +33,7 @@ rasa train
 rasa run actions &
 rasa run
 ```
-4. Testing Voice Features
+### 5. Testing Voice Features
 You can test by passing audio files into the speech_to_text function and playing audio responses using text_to_speech.
 
 ```yaml
@@ -42,13 +44,3 @@ You can test by passing audio files into the speech_to_text function and playing
    git clone https://github.com/your-repo/conversational-ai-bot.git
    cd conversational-ai-bot
    ```
-
-Configure API Keys Add your OpenAI, Google Cloud, and OpenWeather API keys.
-
-Train and Run Rasa
-```bash
-Copy code
-rasa train
-rasa run actions &
-rasa run
-```
