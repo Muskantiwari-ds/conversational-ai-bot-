@@ -1,0 +1,29 @@
+# Intents and training data for NLP
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good morning
+    - hey there
+
+- intent: ask_help
+  examples: |
+    - I need help
+    - Can you help me with something?
+
+- intent: ask_weather
+  examples: |
+    - What is the weather like?
+    - Tell me the weather in London
+
+- intent: faq_query
+  examples: |
+    - Where can I find my order history?
+    - What's your return policy?
+
+- intent: complex_query
+  examples: |
+    - Can you help me with an advanced question?
+    - How does the stock market work?
