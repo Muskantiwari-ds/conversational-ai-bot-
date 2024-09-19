@@ -1,0 +1,9 @@
+# SQLite database for FAQ responses
+CREATE TABLE faq (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question TEXT NOT NULL,
+    answer TEXT NOT NULL
+);
+
+INSERT INTO faq (question, answer) VALUES ('Where can I find my order history?', 'You can find your order history under My Account -> Order History.');
+INSERT INTO faq (question, answer) VALUES ('What is your return policy?', 'Our return policy lasts 30 days.');
