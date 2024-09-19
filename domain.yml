@@ -1,0 +1,32 @@
+# Defines bot's responses, actions, and intents
+version: "2.0"
+
+intents:
+  - greet
+  - ask_help
+  - ask_weather
+  - faq_query
+  - complex_query
+
+entities:
+  - location
+
+slots:
+  location:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_ask_location:
+    - text: "Please provide a location for the weather."
+
+  utter_faq_query:
+    - text: "Here’s what I found: {answer}"
+
+actions:
+  - action_fetch_faq
+  - action_fetch_weather
+  - action_gpt_response
+  - action_voice_interaction
