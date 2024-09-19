@@ -1,0 +1,6 @@
+rasa
+openai
+requests
+google-cloud-speech
+google-cloud-texttospeech
+sqlite3
