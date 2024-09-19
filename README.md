@@ -17,41 +17,38 @@ This bot integrates Generative AI (GPT), Voice Support (Speech-to-Text and Text-
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
+### 2. Set Up Environment Variables
 
-2. Set Up Environment Variables
 OPENAI_API_KEY: OpenAI API key.
 GOOGLE_APPLICATION_CREDENTIALS: Path of Google Cloud credentials JSON file.
-3. Run Rasa
-bash
+
+### 3. Run Rasa
+```bash
+
 Copy code
 rasa train
 rasa run actions &
 rasa run
+```
 4. Testing Voice Features
 You can test by passing audio files into the speech_to_text function and playing audio responses using text_to_speech.
 
-yaml
-Copy code
-
----
-
+```yaml
 ### **How to Run the Bot**
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/your-repo/conversational-ai-bot.git
    cd conversational-ai-bot
-Install Dependencies
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
 Configure API Keys Add your OpenAI, Google Cloud, and OpenWeather API keys.
 
 Train and Run Rasa
-
-bash
+```bash
 Copy code
 rasa train
 rasa run actions &
 rasa run
+```
